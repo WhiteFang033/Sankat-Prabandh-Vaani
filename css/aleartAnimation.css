@@ -1,0 +1,8 @@
+@keyframes aleart{
+    0%{
+        background-color:rgba(226, 72, 72, 0.765);
+    }
+    100%{
+        background-color:red;
+    }
+}

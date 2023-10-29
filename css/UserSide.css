@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,800;0,900;1,300&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;1,6..12,200&family=Source+Code+Pro:ital,wght@0,200;0,400;0,500;0,800;0,900;1,400;1,500&display=swap');
+
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Source Code Pro', monospace */
+
+:root {
+    --mode: light;
+    --purple: rgb(108, 108, 237);
+    --black: black;
+    --bg: #FEFEFE;
+    --body: #5A7BFA;
+    --width_sidebars: 40px;
+    --text_color: white;
+    --box-shadow:0px 1px 9px rgb(40, 39, 39);
+    --border: 3px solid black;
+    --card_body: #E0FFFF;
+    --card_text: black;
+    --map_border: 10px solid black;
+    --website_name_text_shadow: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 500vh;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.upperNav {
+    height: 15vh;
+    width: 100vw;
+    background-color: var(--body);
+    border-radius: 0px 0px 15px 15px;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--text_color);
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:var(--box-shadow);
+}
+
+.websiteName{
+    font-size: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 20px;
+    text-shadow: var(--website_name_text_shadow);
+}
+
+.date_time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 80px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.salutations {
+    margin: 0px 25px;
+    font-size: 35px;
+}
+
+.date {
+    margin: 0px 10px;
+}
+
+.time {
+    font-size: 35px;
+    margin: 0px 10px;
+}
+
+.containerMain {
+    width: 100vw;
+    height: calc(100vh - 20vh);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather {
+    width: calc(100vw - 2*var(--width_sidebars) - 3vw);
+    height: 70vh;
+    border-radius: 70px 5px 70px 5px;
+    background-color: var(--body);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--text_color);
+    box-shadow: var(--box-shadow);
+    transition: .6s ease-in-out;
+
+}
+
+.sideLeft {
+    height: 63vh;
+    width: var(--width_sidebars);
+    background-color: var(--body);
+    border-radius: 0px 5px 70px 0px;
+    transition: 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.name{
+    display: none;
+    font-size: 30px;
+    margin: auto 20px;
+    color: var(--text_color);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.sideRight {
+    height: 63vh;
+    width: var(--width_sidebars);
+    background-color: var(--body);
+    border-radius: 70px 0px 0px 5px;
+    transition: 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.options{
+    margin: auto 30px;
+    color: var(--text_color);
+    font-family: 'Nunito Sans', sans-serif;
+    height: 250px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.opnHeading{
+    font-size: 30px;
+}
+.options img{
+    height: 43px !important;
+    width: auto;
+}
+.modeChange{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.logout p{
+    font-size: 18px;
+}
+.sideRight img, .sideLeft img{
+    height: 30px;
+    transition: 0.6s ease-in-out;
+}
+
+.animationSlide {
+    width: 17vw;
+}
+
+#weatherImage {
+    margin: 20px 0px;
+    height: 110px;
+}
+
+.temp {
+    margin: 10px 60px;
+    font-size: 35px;
+    align-self: center;
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.condition {
+    margin: 0px 0px;
+    font-size: 22px;
+}
+
+.weatherDetails {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.location {
+    margin: 0px 20px;
+    font-size: 28px;
+}
+.location img{
+    height: 25px;
+    width: auto;
+}
+
+.temp_feels_like,
+.winds,
+.pressure {
+    margin: 10px 0px;
+    font-weight: bolder;
+}

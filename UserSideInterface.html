@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPV</title>
+    <link rel="stylesheet" href="css/UserSide.css">
+    <link rel="stylesheet" href="css/newsSection.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/aleartAnimation.css">
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+    <div class="upperNav">
+        <div class="websiteName" id="websiteName">Sankat Prabandh Vaani</div>
+        <div class="salutations" id="salutations_id">Good Evening!</div>
+        <div class="date_time">
+            <div class="time" id="time_id"></div>
+            <div class="date" id="date_id"></div>
+        </div>
+    </div>
+    <div class="containerMain">
+        <div class="sideLeft">
+            <div class="name" id="name_section"></div>
+            <img src="assets/icons/right-chevron.png" alt="">
+        </div>
+        <div class="weather">
+            <div class="temp">
+                <img src="" alt="" id="weatherImage">
+                <p id="temperature">13&deg;C</p>
+                <div class="condition" id="tempCondition">Cool</div>
+            </div>
+            <div class="weatherDetails">
+                <div class="temp_feels_like" id="feels_like">29 &deg;C</div>
+                <div class="winds" id="winds">Winds</div>
+                <div class="pressure" id="pressure">Pressure</div>
+            </div>
+
+            <div class="location">
+                <img src="assets/icons/placeholder.png" alt="">
+                <div class="city" id="location_city">Trichy</div>
+                <div class="state" id="location_state">Tamil Nadu, India</div>
+            </div>
+        </div>
+        <div class="sideRight">
+            <div class="options">
+                <div class="opnHeading">Options</div>
+                <div class="modeChange" id="modeChange"><img src="assets/icons/dark_mode.png" alt="">
+                <p>Dark Mode</p></div>
+                <div class="logout" id="logout"><img src="assets/icons/power.png" alt="">
+                    <p>Logout</p>
+                </div>
+            </div>
+            <img src="assets/icons/left-chevron.png" alt="">
+        </div>
+    </div>
+    <div class="newsSection">
+        <div class="heading">News</div>
+        <div class="newsContainer">
+            <!-- <div class="newsCard">
+                <div class="title"><a href="#" target="_blank">Title</a></div>
+                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente veniam praesentium officiis aliquid non vel, obcaecati nemo natus harum fuga dicta suscipit.</div>
+                <div class="author">Ruskin Bond</div> -->
+
+        </div>
+    </div>
+    <div class="mapSection">
+        <div class="mapHeading">Map</div>
+        <div class="mapsRendering" id="mapContainer"></div>
+    </div>
+</body>
+<script src="js/geoLocation.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/script.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/here_map.js"></script>
+<script src="js/functionalities.js"></script>
+<script src="js/createAleart.js"></script>
+<script src="js/dataLoading.js"></script>
+
+</html>
