@@ -41,8 +41,8 @@ function time(){
       }
      
     
-    // var current_time = hour+":"+minute+" "+postfix;
-    // document.getElementById("time_id").innerText = current_time; 
+    var current_time = hour+":"+minute+" "+postfix;
+    document.getElementById("time_id").innerText = current_time; 
    
     var full_date= month+" "+date+", "+day
     document.getElementById("date_id").innerText = full_date;

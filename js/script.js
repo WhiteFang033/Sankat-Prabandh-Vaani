@@ -28,7 +28,7 @@ setInterval(async () => {
         pressure.innerHTML = `Pressure- ${result.current.pressure_in} "Hg`;
         longi = result.location.lon;
         lati = result.location.lat;
-        time_id.innerHTML = result.location.localtime.substring(11, 16)
+        // time_id.innerHTML = result.location.localtime.substring(11, 16)
 
         let condition_weather = result.current.condition.text.split();
 
@@ -40,9 +40,9 @@ setInterval(async () => {
                 {
                     signalAleart();
                 }
-                else{
-                    stopAleart()
-                }
+                // else{
+                //     stopAleart()
+                // }
             }
         }
 
