@@ -16,6 +16,9 @@ modeChange.addEventListener('click', (e) => {
         root.style.setProperty('--card_body', 'rgb(56, 56, 56)');
         root.style.setProperty('--card_text', '#5D3FD3');
         root.style.setProperty('--map_border', '10px solid #5D3FD3');
+        root.style.setProperty('--contact_border', '#5D3FD3');
+        root.style.setProperty('--input_bg', 'rgb(47, 47, 133)');
+        root.style.setProperty('--btn_bg', '#5D3FD3');
         root.style.setProperty('--website_name_text_shadow', `0 0 20px #5D3FD3,
                                                             0 0 40px #5D3FD3
                                                             `);
@@ -32,6 +35,9 @@ modeChange.addEventListener('click', (e) => {
         localStorage.setItem('--card_body', 'rgb(56, 56, 56)');
         localStorage.setItem('--card_text', '#5D3FD3');
         localStorage.setItem('--map_border', '10px solid #5D3FD3');
+        localStorage.setItem('--contact_border', '#5D3FD3');
+        localStorage.setItem('--input_bg', 'rgb(47, 47, 133)');
+        localStorage.setItem('--btn_bg', '5D3FD3');
         localStorage.setItem('--website_name_text_shadow', `0 0 20px #5D3FD3,
         0 0 40px #5D3FD3`);
         localStorage.setItem('icon', 'assets/icons/light_mode.png');
@@ -46,6 +52,9 @@ modeChange.addEventListener('click', (e) => {
         root.style.setProperty('--card_text', 'black');
         root.style.setProperty('--map_border', '10px solid black');
         root.style.setProperty('--website_name_text_shadow', `none`);
+        root.style.setProperty('--contact_border', 'white');
+        root.style.setProperty('--input_bg', 'white');
+        root.style.setProperty('--btn_bg', 'white');
         modeChange.children[0].src = 'assets/icons/dark_mode.png';
 
         //saving values in localStorage
@@ -58,6 +67,9 @@ modeChange.addEventListener('click', (e) => {
         localStorage.setItem('--card_body', '#E0FFFF');
         localStorage.setItem('--card_text', 'black');
         localStorage.setItem('--map_border', '10px solid black');
+        localStorage.setItem('--contact_border', 'white');
+        localStorage.setItem('--input_bg', 'white');
+        localStorage.setItem('--btn_bg', 'white');
         localStorage.setItem('--website_name_text_shadow', 'none');
         localStorage.setItem('icon', 'assets/icons/dark_mode.png');
     }

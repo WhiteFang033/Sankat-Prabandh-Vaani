@@ -18,6 +18,9 @@ font-family: 'Source Code Pro', monospace */
     --card_text: black;
     --map_border: 10px solid black;
     --website_name_text_shadow: none;
+    --contact_border: white;
+    --input_bg : white;
+    --btn_bg : white;
 }
 
 * {
@@ -222,6 +225,96 @@ body::-webkit-scrollbar {
 .pressure {
     margin: 10px 0px;
     font-weight: bolder;
+}
+
+.helpConnection{
+    margin: 50px auto;
+    height: 90vh;
+    width: 100vw;
+    background-color: var(--body);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.helpHeading{
+    font-size: 45px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    color: var(--text_color);
+    margin: 40px auto;
+}
+
+.contactHelp{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+.contactMessage{
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 5px solid var(--contact_border);
+    border-radius: 10px;
+    color: var(--text_color);
+    font-family: 'Nunito Sans', sans-serif;
+    margin: auto 70px;
+}
+
+input{
+    height: 30px;
+    width: 90%;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    align-self: flex-start;
+    font-family: 'Nunito Sans', sans-serif;
+    border: 2px solid var(--contact_border);
+    background-color: white;
+    color: (--text_color);
+}
+button{
+    height: 40px;
+    width: 240px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: white;
+    background-color: var(--input_bg);
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    transition: .4s ease-in;
+}
+button:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+.contactCall{
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 5px solid var(--contact_border);
+    border-radius: 10px;
+    color: var(--text_color);
+    font-family: 'Nunito Sans', sans-serif;
+    margin: auto 70px;
+}
+.numbers{
+    display: flex;
+    justify-content: space-between;
+}
+.numbers p{
+    font-size: 25px;
+}
+.numbers button{
+    width: 100px;
+    height: 40px;
 }
 
 .foot{
