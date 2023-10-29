@@ -48,9 +48,6 @@ setInterval(async () => {
 
 
     })
-    .catch(error => {
-        console.error('Error Fetching the API...')
-    })
 
     
     
