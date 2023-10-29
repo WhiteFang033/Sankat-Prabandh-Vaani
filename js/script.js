@@ -16,6 +16,8 @@ setInterval(async () => {
         return response.json()
     })
     .then(result=>{
+        const calamities = ['thunderstorm', 'earthquakes', 'tsunami','flood', 'forest fires', 'landslides', 'avalanche']
+
         weatherImage.src = result.current.condition.icon;
         temperature.innerHTML = result.current.temp_c + "&deg;C";
         tempCondition.innerHTML = result.current.condition.text;
@@ -27,6 +29,24 @@ setInterval(async () => {
         longi = result.location.lon;
         lati = result.location.lat;
         time_id.innerHTML = result.location.localtime.substring(11, 16)
+
+        let condition_weather = result.current.condition.text.split();
+
+        for(let i = 0; i<calamities.length; i++)
+        {
+            for(let j = 0; j<condition_weather.length; j++)
+            {
+                if(calamities[i] == condition_weather[j])
+                {
+                    signalAleart();
+                }
+                else{
+                    stopAleart()
+                }
+            }
+        }
+
+
     })
     .catch(error => {
         console.error('Error Fetching the API...')

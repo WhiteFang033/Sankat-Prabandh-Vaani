@@ -1,8 +1,8 @@
 .newsSection{
-    height: 220vh;
+    height: 180vh;
     width: 100vw;
     background-color: var(--body);
-    border-radius: 60px 60px 0 0;
+    border-radius: 60px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
