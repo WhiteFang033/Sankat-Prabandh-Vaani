@@ -25,6 +25,8 @@ The SPV (Sankat Prabandh Vaani) is a comprehensive alerting system that provides
 - Vedansh ( example@gmail.com )
 - Raghava ( example@gmail.com )
 
+  Note: The backend is not yet deployed and hence doesn't have an email verification system and hence would accept any string for login credentials. 
+
 <br> <br>
 by Whitehat rookies <br> <br>
 Vedansh, Shashank, Garvv, Vihar, Raghava
